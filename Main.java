@@ -15,10 +15,17 @@ public class Main
 		q.quickSort(arr, 0, arr.length-1);
 		System.out.println("USING QUICK SORT");
 		q.printArray(arr);
+		
 		System.out.println();
 		MergeSort m = new MergeSort();
 		m.merge(arr, 0, 0, 0);
 		System.out.println("USING MERGE SORT");
 		m.printArray(arr);
+		
+		InsertionSort isort = new InsertionSort();
+		isort.insertionSort(arr);
+		System.out.println();
+		System.out.println("USING INSERTION SORT");
+		isort.printArray(arr);
 	}
 }
